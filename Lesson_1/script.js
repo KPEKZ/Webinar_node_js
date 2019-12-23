@@ -10,3 +10,4 @@ cursor
   .write('\n')           
 
   cursor.hex('#660000').underline()
+  // со звуком не получилось(
