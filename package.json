@@ -1,17 +1,29 @@
 {
-  "name": "Lesson_1",
+  "name": "Webinar_node_js",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serv": "nodemon script.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KPEKZ/Webinar_node_js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KPEKZ/Webinar_node_js/issues"
+  },
+  "homepage": "https://github.com/KPEKZ/Webinar_node_js#readme",
   "dependencies": {
     "ansi": "^0.3.1",
-    "nodemon": "^2.0.2"
+    "cheerio": "^1.0.0-rc.3",
+    "clix-logger": "^2.0.0",
+    "minimist": "^1.2.0",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.0"
   }
 }
