@@ -56,6 +56,7 @@ app.post('/news',(req, res)=>
                     arrNews.push(rate)
                     countNews--;
                     temp++;
+                    
                 }
                 
                 res.render('res',{
