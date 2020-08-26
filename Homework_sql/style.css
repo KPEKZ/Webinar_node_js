@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.b-header {
+  height: 150px;
+  background-color: blue;
+}
+
+.news {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.b-button {
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgray;
+}
+
+.b-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.form2 {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.form1 {
+  display: block;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.b-input:nth-child(1) {
+  min-width: 20%;
+}
+
+.b-input:nth-child(2) {
+  min-width: 20%;
+  margin-top: 7px;
+}
+
+.btn2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.btn1 {
+  margin-top: 7px;
+}
+
+.b-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: 2px solid black;
+  color: black;
+}
+
+.mark {
+  list-style: none;
+}
+
+.title {
+  display: block;
+}
+
+.td-id {
+  width: 70%;
+}
+
+.td-name {
+  width: 70%;
+}
+/*# sourceMappingURL=style.css.map */

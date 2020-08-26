@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid
+{
+    padding: 0;
+}
+
+.b-header {
+  height: 150px;
+  background-color: green;
+}
+
+.news
+{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    
+}
+
+.b-button
+{
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgray;
+
+}
+
+.b-form
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.form2
+{
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+}
+
+.form1
+{
+   // padding: 50px 50px 0 50px;
+   display: block;
+}
+
+.field
+{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+ 
+
+// .b-input:nth-child(1)
+// {
+//     min-width: 20%;
+    
+
+// }
+
+.b-input{
+    min-width: 20%;
+}
+
+.b-input:not(:first-child)
+{
+    margin-top: 7px;
+}
+
+// .b-input:nth-child(2)
+// {
+    
+//     margin-top: 7px;
+   
+// }
+
+
+.btn2
+{
+    flex-basis: 50%;
+}
+
+.btn1
+{
+  
+    margin-top:7px;
+   // width: 100%;
+}
+
+.b-input
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: 2px solid black;
+    color: black;
+}
+
+.newSection
+{
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: flex-start;
+    //flex-direction: row;
+}
+
+.mark
+{
+    list-style: none;
+}
+
+.title
+{
+    
+    display: block;
+    
+}
+
+.output
+{
+    flex-basis: 70%;
+}
+
+.td-id,.td-name,.td-lastname,.td-firstname,.td-bio,.td-avatar,.td-email
+{
+    border: 2px solid black;
+    width: 10%;
+}
+
+.b-col
+{
+    border: 2px solid black;
+}
+
+.bio{
+    padding: 10px;
+    resize: none;
+    margin-top: 7px;
+    outline: 2px solid black;
+    min-width: 20%;
+}
+
