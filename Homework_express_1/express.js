@@ -4,6 +4,9 @@ const path = require('path');
 const consolidate = require('consolidate');
 const request = require('request');
 const cheerio = require('cheerio');
+const cookieParser = require('cookie-parser');
+//const session = require('express-session');
+//const connect = require('connect');
 let arrNews = new Array(); // массив новостей
 
 
@@ -20,7 +23,8 @@ app.use(express.urlencoded({extended: true}));
 app.engine('hbs',consolidate.handlebars);
 app.set('view engine','hbs');
 app.set('views',__dirname);
-
+app.use(cookieParser());
+//app.use(session());
 
 
 app.listen(8000,()=>{
@@ -31,6 +35,7 @@ app.get('/news',(req, res)=>{
     res.render('res',{
         rate :arrNews
      });
+     console.log("Cookies: ", req.cookies);
 });
 
 app.post('/delete',(req,res)=>
@@ -49,6 +54,8 @@ app.post('/news',(req, res)=>
                 const $ = cheerio.load(body);
                 let countNews = req.body.countNews; //количество новостей
                 console.log(countNews);
+                res.cookie('limit',countNews);
+                console.log("Cookies: ", req.cookies);
                 let temp =0;
                 while (countNews > 0)
                 {
@@ -56,20 +63,40 @@ app.post('/news',(req, res)=>
                     arrNews.push(rate)
                     countNews--;
                     temp++;
+                    
                 }
                 
                 res.render('res',{
                     rate : arrNews
                  });
-            
+                 
         }
         });
 
-   
+        
+        
 
 });
 
 app.get('/',(req,res)=>
 {
     res.sendFile(path.resolve(__dirname,'index.html'));
+    console.log("Cookies: ", req.cookies);
+    
 });
+
+// app.get('/setcookie', function(req, res){
+//     // setting cookies
+//     res.cookie('username', 'john doe', { maxAge: 900000, httpOnly: true });
+//     return res.send('Cookie has been set');
+// });
+
+// app.get('/getcookie', function(req, res) {
+//     var username = req.cookies['username'];
+//     if (username) {
+//         return res.send(username);        
+//     }
+
+//     return res.send('No cookie found');
+// });
+

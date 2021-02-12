@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.b-header {
+  height: 150px;
+  background-color: green;
+}
+
+.news {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.b-button {
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgray;
+}
+
+.b-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.form2 {
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.form1 {
+  display: block;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.b-input {
+  min-width: 20%;
+}
+
+.b-input:not(:first-child) {
+  margin-top: 7px;
+}
+
+.btn2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.btn1 {
+  margin-top: 7px;
+  width: 100%;
+}
+
+.b-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: 2px solid black;
+  color: black;
+}
+
+.newSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.mark {
+  list-style: none;
+}
+
+.title {
+  display: block;
+}
+
+.output {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.td-id,
+.td-name,
+.td-lastname,
+.td-firstname,
+.td-bio,
+.td-avatar,
+.td-email {
+  border: 2px solid black;
+  width: 10%;
+}
+
+.b-col {
+  margin-top: 7px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.bio {
+  padding: 10px;
+  resize: none;
+  margin-top: 7px;
+  outline: 2px solid black;
+  min-width: 20%;
+}
+
+.form-reg {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-reg input,
+.form-reg textarea {
+  width: 40%;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+.button-reg {
+  width: 40%;
+}
+
+.err {
+  text-align: center;
+  width: 100%;
+}
+
+.form-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.form-up input, .form-up textarea {
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+/*# sourceMappingURL=style.css.map */

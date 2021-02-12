@@ -1,0 +1,11 @@
+{
+  
+    "connectionLimit": 5,
+    "host": "localhost",
+    "database": "users",
+    "user": "root",
+    "password": "admin",
+    "port": "32772"
+    
+  }
+  
